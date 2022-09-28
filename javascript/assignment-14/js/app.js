@@ -1,0 +1,21 @@
+//Get
+var date = new Date()
+var ate = date.getDate()
+var month = date.getMonth()
+var day = date.getDay()
+var year = date.getFullYear()
+var hours = date.getHours()
+var min = date.getMinutes()
+var sec = date.getSeconds()
+var mili = date.getMilliseconds()
+var time = date.getTime()
+
+//Set
+var sAte = date.setDate(16)
+var sMonth = date.setMonth(3)
+var sYear = date.setFullYear(2007)
+var sHours = date.setHours(6)
+var sMin = date.setMinutes(6)
+var sSec = date.setSeconds(4)
+var sMili = date.setMilliseconds(3)
+var sTime = date.setTime(3)
