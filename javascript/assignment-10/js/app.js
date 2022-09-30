@@ -33,11 +33,11 @@
 //     console.log( month)
 
 //3
-// var test = prompt("it's before noon or after noon?")
+// var test = Number( new Date().getHours())
 // var answer = '';
-// if (test == 'before') {
+// if (test <=12 ) {
 //     answer = 'AM'
-// }else if (test == 'after') {
+// }else if (test >= 12 ) {
 //     answer = 'PM'
 // }else{
 //     answer = "Enter before or after"
@@ -45,8 +45,6 @@
 // console.log(answer)
 
 //4 
-
-
 
 
 
