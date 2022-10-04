@@ -45,10 +45,9 @@
 // console.log(answer)
 
 //4 
-
-
-
-
+// var date = new Date().getTime() - new Date("14-aug-2022").getTime() 
+// var daysPast =Math.floor( date / (1000 * 60 * 60 * 24))
+// console.log(daysPast,"Days")
 
 //5
 // var age = prompt("Enter your age")
