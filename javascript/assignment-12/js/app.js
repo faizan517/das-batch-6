@@ -12,49 +12,49 @@ var wicket2 = 0;
 var numofOver = prompt("enter number of overs");
 var team1 = prompt("enter team first name ");
 var team2 = prompt("enter team second name ");
-
+sleepFor(1000)
+console.log("The match is between "+ " " +  team1  +  " and " + team2 )
 var math = Math.random().toFixed();
-if (math == 1) {
-  sleepFor(2000);
+if (math) {
+  sleepFor(3000);
   console.log(
     "team " + " " + team1 + " " + "win the toss and decide to bat first"
   );
-  console.log(
-    numofOver +
-      " " +
-      " Overs match started, " +
-      " " +
-      team1 +
-      " " +
-      " is to bat."
-  );
-} else {
   sleepFor(2000);
   console.log(
     numofOver +
       " " +
-      " Overs match started, " +
-      " " +
-      team2 +
-      " " +
-      " is to bat."
+      " Overs match started,"
   );
-  console.log(
-    "team " + " " + team2 + " " + "win the toss and decide to bat first"
-  );
+}
+ else {
+//   sleepFor(3000);
+//   console.log(
+//     numofOver +
+//       " " +
+//       " Overs match started, " +
+//       " " +
+//       team2 +
+//       " " +
+//       " is to bat."
+//   );
+//   console.log(
+//     "team " + " " + team2 + " " + "win the toss and decide to bat first"
+//   );
 }
 
 for (let j = 1; j <= numofOver; j++) {
+    sleepFor(2000)
   console.log(j + " " + "over:");
   for (let i = 1; i <= 6; i++) {
     var m = Math.random();
-    var improvedNum = m * 6;
+    var improvedNum = (m * 7);
     var numFloor = Math.floor(improvedNum);
     //   console.log(numFloor)
     if (numFloor == 0) {
       ++wicket;
       sleepFor(2000);
-      console.log("It's out!");
+      console.error("It's out!");
     } else if (numFloor == 4) {
       ++score;
       ++score;
@@ -83,7 +83,7 @@ for (let j = 1; j <= numofOver; j++) {
     }
     // console.log(improvedNum)
   }
-  console.warn("score" + " " + score + "/" + wicket);
+  console.warn(team1 + " " +  "score" + " " + score + "/" + wicket);
 }
 // console.log("total score" + " " + score + "/" + wicket);
 console.log(
@@ -92,15 +92,16 @@ console.log(
 // console.log("wicket"+ " " + wicket)
 
 for (let j = 1; j <= numofOver; j++) {
+    sleepFor(2000)
   console.log(j + " " + "over:");
   for (let i = 1; i <= 6; i++) {
     var m = Math.random();
-    var improvedNum = m * 6;
+    var improvedNum = (m * 7);
     var numFloor = Math.floor(improvedNum);
     if (numFloor == 0) {
       ++wicket2;
       sleepFor(2000);
-      console.log("It's out!");
+      console.error("It's out!");
     } else if (numFloor == 4) {
       ++score2;
       ++score2;
@@ -130,14 +131,14 @@ for (let j = 1; j <= numofOver; j++) {
       ++score2;
     }
   }
-  console.warn("score" + " " + score2 + "/" + wicket2);
+  console.warn( team2 + " " + "score" + " " + score2 + "/" + wicket2);
 }
-
+--score
 if (score > score2) {
   console.log("team " + " " + team1 + " " + "won");
 } else if (score < score2) {
   console.log("team " + " " + team2 + " " + "won");
-} else {
+} else if (score == score2){
   console.log("Tie");
 }
 
@@ -146,7 +147,7 @@ console.warn(
     " " +
     team1 +
     " " +
-    --score +
+    score +
     "/" +
     wicket +
     " " +
