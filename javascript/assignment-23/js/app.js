@@ -66,12 +66,15 @@ var courses = [
   },
 ];
 
-// var nArr = [];
-// for (let i = 0; i < students.length; i++) {
-//   nArr.push(students[i].name);
+var nArr = [];
+for (let i = 0; i < students.length; i++) {
+  nArr.push(students[i].name);
 
-// }
-// for (let j = 0; j < courses.length; j++) {
-//   nArr.push(courses[j].std_id);
-// }
-// console.log(nArr);
+}
+for (let j = 0; j < courses.length; j++) {
+  nArr.push(courses[j].std_id);
+}
+for (let k = 0; k < courses.length; k++) {
+  nArr.push(courses[k].name);
+}
+console.log(nArr);
