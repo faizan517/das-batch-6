@@ -1,34 +1,9 @@
-//Object of Number
-var objNum = new Number("123");
-// console.log(typeof objNum,objNum)
-//for value
-// var valNum = objNum.valueOf()
-// console.log(typeof valNum, valNum)
-// var num =Number('123')
-// console.log(typeof num, num)
+//1) Object of (Number,String,Boolean,Method)
 
-//Object of String
-var objStr = new String("faizan");
-// console.log(typeof objStr,objStr)
-// for value
-// var valStr = objStr.valueOf()
-// console.log(typeof valStr, valStr)
-// var Str =String('123')
-// console.log(typeof Str, Str)
-
-//Object of Boolean
-var objBool = new Boolean();
-// console.log(typeof objBool,objBool)
-// for value
-// var valBool = objBool.valueOf()
-// console.log(typeof valBool, valBool)
-// var Bool =Boolean('123')
-// console.log(typeof Bool, Bool)
-
-//Object Method
 var obj = {
   name: "ali",
   cnic: 113243242443,
+  boolean: true,
   age: 20,
   get: function () {
     console.log(
@@ -36,15 +11,16 @@ var obj = {
     );
   },
 };
+
+
 obj.time = 24;
 // obj.get()
 // console.log( obj.cnic)
 // console.log( obj)
 var check = "time" in obj;
-//------- in return boolean true or false and use object key in string form e.g "time"
 // console.log(check)
 
-//Constructor Functions ----------- if we want to make multipal obj but all have same key diff value so we can use constructor functions
+//2) Constructor Functions ----------- if we want to make multipal obj but all have same key diff value so we can use constructor functions
 function user(first, last, age, cnic) {
   this.firstName = first;
   this.lastName = last;
@@ -58,9 +34,8 @@ var user2 = new user("hasnain", "ali", 24, 3242313123123);
 // console.log(user1)
 // console.log(user2)
 
-
-//Prototypes ---------we can not add key and value outside the constructor function like we do in object but with the help of prototype we can do now
-user.prototype.city ;
+//3) Prototypes ---------we can not add key and value outside the constructor function like we do in object but with the help of prototype we can do now
+user.prototype.city;
 // console.log(user1)
 user.prototype.sayHello = function () {
   alert("Hello world");
