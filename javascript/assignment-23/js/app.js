@@ -66,3 +66,14 @@ var courses = [
   },
 ];
 
+for (let i = 0; i < courses.length; i++) {
+  // console.log(courses[i].std_id)
+  students[i].nName = [];
+  students[i].nName = courses[i].name;
+  for (let j = 0; j < courses[i].std_id.length; j++) {
+  console.log(courses[i].std_id[j])
+    // if (courses[i].std_id[j] == students[i]._id) {
+    // }
+  }
+}
+console.log(students);
